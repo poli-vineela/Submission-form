@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SUBMISSION FORM</title>
+        <script type="text/javascript" src="validate.js"></script>
+        <style>
+         h1{
+             color: crimson;
+         }
+         form{
+             border-style:groove;
+             border-color: black;
+             width: 400px;
+             border-width: 5px;
+             height: 400px;
+            
+         }
+         label{
+             font-weight: bold;
+             font-style: italic;
+             color:darkcyan;
+             font-size: 20px;
+             line-height: 40px;
+         }
+         .form-center{
+             justify-content: center;
+             display: flex;
+         }
+        </style>
+    </head>
+<body>
+    <div><center><h1><b>SUBMISSION FORM</b></h1></center></div>
+   <div class="form-center"><form name="SUBMISSIONFORM" onsubmit="return(validate());" action="#">
+        <br>
+        <label>NAME:</label>
+        <input type="text" name="NAME" size="10">
+        <br>
+        <br>
+        <label>AGE:</label>
+        <input type="text" name="AGE" size="3">
+        <br>
+        <br>
+        <label>HEIGHT:</label>
+        <input type="text" name="HEIGHT" size="4">
+        <br>
+        <br>
+        <label>GOAL:</label>
+        <select>
+            <option value="Fat-Loss">FAT-LOSS</option>
+            <option value="Muscle-Gain">MUSCLE-GAIN</option>
+        </select>
+        <br>
+        <br>
+        <br>
+        <br>
+        <center><input type="submit" name="Submit" value="SUBMIT"></center>
+
+
+    </form></div>
+
+
+</body>
+</html>
